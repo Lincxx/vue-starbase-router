@@ -2,8 +2,9 @@
   <div class="col-md-12">
     <Item
       v-for="(item, index) in items"
-      key="item"
-      v-bind:item="item"
+      :key="index"
+      v-bind:passed-item="item"
+      :type="type"
     />
   </div>
 </template>
